@@ -9,24 +9,27 @@
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background: linear-gradient(to right, #000000, #1a1a1a);
+      background-color: #000;
       color: #d4af37;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      text-align: center;
     }
 
     .container {
       border: 2px solid #d4af37;
-      padding: 30px;
+      border-radius: 20px;
+      padding: 40px 30px;
       max-width: 700px;
-      margin: 20px;
-      border-radius: 10px;
+      text-align: center;
       background-color: #111;
-      box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .logo {
+      width: 160px;
+      margin-bottom: 30px;
     }
 
     h1 {
@@ -35,36 +38,43 @@
     }
 
     p {
-      font-size: 1em;
-      line-height: 1.6em;
-      margin: 0 0 15px;
+      font-size: 1.1em;
+      line-height: 1.8em;
+      margin: 0 0 20px;
     }
 
-    .logo {
-      margin-top: 25px;
-      font-size: 1.1em;
-      letter-spacing: 2px;
+    .team {
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 10px;
     }
 
     .slogan {
-      font-size: 0.95em;
-      margin-top: 8px;
-      color: #b8860b;
+      font-size: 1em;
+      color: #d4af37;
       font-weight: bold;
+      margin-top: 8px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>DROGI KLIENCIE!</h1>
-    <p>Nasza strona internetowa jest tymczasowo niedostępna<br>
-    z powodu prac technicznych. Przepraszamy za utrudnienia<br>
-    i zapraszamy ponownie wkrótce.</p>
+    <img src="logo.png" alt="Safe Transfer Logo" class="logo" />
 
-    <div class="logo">
-      <strong>SAFE TRANSFER</strong>
-      <div class="slogan">BEZPIECZNIE • DYSKRETNIE • NA CZAS</div>
-    </div>
+    <h1>DROGI KLIENCIE!</h1>
+
+    <p>Nasza strona internetowa jest tymczasowo niedostępna<br>
+    z powodu prac technicznych.<br>
+    Przepraszamy za utrudnienia i zapraszamy ponownie wkrótce.</p>
+
+    <div class="team">Zespół</div>
+    <div class="brand">SAFE TRANSFER</div>
+    <div class="slogan">BEZPIECZNIE • DYSKRETNIE • NA CZAS</div>
   </div>
 </body>
 </html>
