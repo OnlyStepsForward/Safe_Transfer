@@ -13,7 +13,7 @@
       color: #d4af37;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       min-height: 100vh;
     }
 
@@ -25,13 +25,10 @@
       text-align: center;
       background-color: #111;
       box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-    }
-
-    .logo {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 40px;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     h1 {
@@ -49,13 +46,18 @@
       font-size: 1.1em;
       font-style: italic;
       line-height: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="logo.png" alt="Safe Transfer Logo" class="logo" />
-
     <h1>DROGI KLIENCIE!</h1>
 
     <p>Nasza strona internetowa jest tymczasowo niedostępna<br>
@@ -67,6 +69,9 @@
       Zespół<br>
       Safe Transfer
     </div>
+
+    <img src="logo.png" alt="Safe Transfer Logo" class="logo" />
   </div>
 </body>
 </html>
+
